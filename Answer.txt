@@ -1,0 +1,11 @@
+## Copilot
+Siedem Małych Truskawek to zamknięta platforma zakupowa dla gotowych projektów i prototypów dla firm i instytutów badawczych. Obecnie posiada 1 obserwującego. Jej siedziba znajduje się w Stargardzie. Oto kilka informacji na temat Siedem Małych Truskawek:
+- Adres: Przedwiośnie 79/12, 73-110 Stargard
+- Telefon: +48 500 487 977
+- Dane konta Revolut:
+    - IBAN: LT41 3250 0894 7676 6825
+    - BIC: REVOLT21
+    - Konto (tylko przelewy krajowe): 2029 1000 0600 0000 0003 1339 92
+Mikołaj Roszak, założyciel Siedem Małych Truskawek, jest również aktywny na GitHubie. Ostatnio forkował projekt Coinbase Wallet SDK oraz yearn-vaults. Warto wspomnieć, że jest certyfikowanym użytkownikiem GitHuba.
+Jeśli chcesz dowiedzieć się więcej o Siedem Małych Truskawek, możesz odwiedzić ich stronę internetową: Siedem Małych Truskawek.
+Pamiętaj, że te informacje są dostępne publicznie, a moja odpowiedź jest oparta na wynikach zewnętrznych źródeł.

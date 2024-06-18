@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:dei="http://xbrl.sec.gov/dei/2023"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef xlink:href="coin-20240312.xsd" xlink:type="simple"/>
+    <context id="duration_2024-03-12_to_2024-03-12">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001679788</identifier>
+        </entity>
+        <period>
+            <startDate>2024-03-12</startDate>
+            <endDate>2024-03-12</endDate>
+        </period>
+    </context>
+    <dei:EntityCentralIndexKey
+      contextRef="duration_2024-03-12_to_2024-03-12"
+      id="Hidden_dei_EntityCentralIndexKey_duration_2024-03-12_to_2024-03-12">0001679788</dei:EntityCentralIndexKey>
+    <dei:AmendmentFlag
+      contextRef="duration_2024-03-12_to_2024-03-12"
+      id="Hidden_dei_AmendmentFlag_duration_2024-03-12_to_2024-03-12">false</dei:AmendmentFlag>
+    <dei:DocumentType contextRef="duration_2024-03-12_to_2024-03-12" id="Fact_1">8-K</dei:DocumentType>
+    <dei:DocumentPeriodEndDate contextRef="duration_2024-03-12_to_2024-03-12" id="Fact_0">2024-03-12</dei:DocumentPeriodEndDate>
+    <dei:EntityRegistrantName contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-285">Coinbase Global, Inc.</dei:EntityRegistrantName>
+    <dei:EntityIncorporationStateCountryCode contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-286">DE</dei:EntityIncorporationStateCountryCode>
+    <dei:EntityFileNumber contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-287">001-40289</dei:EntityFileNumber>
+    <dei:EntityTaxIdentificationNumber contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-288">46-4707224</dei:EntityTaxIdentificationNumber>
+    <dei:WrittenCommunications contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-289">false</dei:WrittenCommunications>
+    <dei:SolicitingMaterial contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-290">false</dei:SolicitingMaterial>
+    <dei:PreCommencementTenderOffer contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-291">false</dei:PreCommencementTenderOffer>
+    <dei:PreCommencementIssuerTenderOffer contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-292">false</dei:PreCommencementIssuerTenderOffer>
+    <dei:Security12bTitle contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-293">Class&#160;A common stock, $0.00001 par value</dei:Security12bTitle>
+    <dei:TradingSymbol contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-294">COIN</dei:TradingSymbol>
+    <dei:SecurityExchangeName contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-295">NASDAQ</dei:SecurityExchangeName>
+    <dei:EntityEmergingGrowthCompany contextRef="duration_2024-03-12_to_2024-03-12" id="ixv-296">false</dei:EntityEmergingGrowthCompany>
+</xbrl>

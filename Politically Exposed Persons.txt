@@ -1,0 +1,53 @@
+Ustawa z dnia 1 marca 2018 roku o przeciwdziałaniu praniu pieniędzy i finansowaniu terroryzmu, 
+a także ustawa z dnia 30 marca 2021 roku o zmianie ustawy o przeciwdziałaniu praniu pieniędzy oraz finansowaniu 
+terroryzmu oraz niektórych innych ustaw wprowadziły zmiany związane ze współpracą instytucji obowiązanych z 
+osobami zajmującymi eksponowane stanowisko polityczne, czyli tzw. PEP (ang. Politically Exposed Persons).
+
+Ważną zmianą, którą wprowadziła ustawa z dnia 1 marca 2018 roku o przeciwdziałaniu praniu pieniędzy, 
+jest rozszerzenie definicji PEP. Natomiast zmianą wg nowelizacji ustawy z dnia 30 marca 2021 roku jest 
+zawężenie katalogu PEP przez wyłączenie z niego grup stanowisk średniego i niższego szczebla.
+
+Do grupy Politically Exposed Persons należą osoby zajmujące eksponowane stanowiska polityczne lub pełniące znaczące 
+funkcje publiczne:
+- zarówno na terytorium Rzeczypospolitej Polskiej, 
+- jak również w instytucjach międzynarodowych.
+
+Wg najnowszej ustawy AML, osoby o statusie PEP to m.in.:
+- szefowie państw, szefowie rządów, ministrowie, wiceministrowie oraz sekretarze stanu,
+- członkowie parlamentu lub podobnych organów ustawodawczych,
+- członkowie organów zarządzających partii politycznych,
+- członkowie sądów najwyższych, trybunałów konstytucyjnych oraz innych organów sądowych wysokiego szczebla, 
+których decyzje nie podlegają zaskarżeniu, z wyjątkiem trybów nadzwyczajnych,
+- członkowie trybunałów obrachunkowych lub zarządów banków centralnych,
+- ambasadorowie, chargés d’affaires oraz wyżsi oficerowie sił zbrojnych,
+- członkowie organów administracyjnych, zarządczych lub nadzorczych przedsiębiorstw państwowych, 
+spółek z udziałem Skarbu Państwa, w których ponad połowa akcji albo udziałów należy do Skarbu Państwa 
+lub innych państwowych osób prawnych,
+- dyrektorzy, zastępcy dyrektorów oraz członkowie organów organizacji międzynarodowych lub osoby pełniące 
+równoważne funkcje w tych organizacjach,
+- dyrektorzy generalni w urzędach naczelnych i centralnych organach państwowych oraz dyrektorzy generalni 
+urzędów wojewódzkich,
+- inne osoby zajmujące stanowiska publiczne lub pełniące funkcje publiczne w organach państwa lub 
+centralnych organach administracji rządowej.
+
+Na mocy ustawy instytucje obowiązane w stosunku do każdej z wymienionych wcześniej grup, czyli:
+- klientów lub beneficjentów rzeczywistych, którzy zajmują eksponowane stanowiska polityczne w Polsce 
+lub w instytucjach międzynarodowych,
+- członków rodziny osób o statusie PEP,
+- osób znanych jako bliscy współpracownicy osób o statusie PEP,
+muszą stosować środki bezpieczeństwa finansowego, czyli m.in.:
+- sprawdzenie, czy dana osoba ma status PEP,
+- ustalenie źródła majątku klienta,
+- ustalenie źródła pochodzenia wartości majątkowych będących w dyspozycji klienta w ramach stosunków 
+gospodarczych lub transakcji łączących instytucję obowiązaną z PEP,
+- zintensyfikowane, bieżące monitorowanie stosunków gospodarczych z klientem o statusie PEP,
+- uzyskiwanie akceptacji kadry kierowniczej wyższego szczebla na relacje gospodarcze z PEP,
+- przyjmowanie oświadczeń klientów, że mają lub nie mają statusu PEP.
+
+Kluczowymi narzędziami, które wspierają instytucje obowiązane w wypełnianiu obowiązków w kontekście współpracy z PEP, 
+są zautomatyzowane systemy AML oraz tzw. listy PEP. Odpowiednie, profesjonalnie przygotowane rozwiązania 
+tego rodzaju pozwalają:
+- szybko i niezawodnie zidentyfikować osoby o statusie PEP, korzystając z aktualnych i wiarygodnych danych na temat 
+osób zajmujących eksponowane stanowiska polityczne,
+- na bieżąco dostosowywać działania do wyników oceny ryzyka transakcji i podmiotu (w tym w obszarze PEP), 
+która automatycznie jest przeprowadzana przez system informatyczny.

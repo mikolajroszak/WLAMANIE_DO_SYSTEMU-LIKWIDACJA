@@ -1,0 +1,129 @@
+Delivered-To: ul.echo12@gmail.com
+Received: by 2002:a2e:be14:0:b0:2c5:4ef0:278b with SMTP id z20csp1961580ljq;
+        Wed, 15 Nov 2023 01:09:04 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGOsjl3u6NVR6ZvjbNLsQx6nTqAcdjcNiW98OgoVsqNXQ/8J3JPrlbjv2W0wSSRPvr0Co0o
+X-Received: by 2002:ad4:4b6f:0:b0:66d:55d9:bc7b with SMTP id m15-20020ad44b6f000000b0066d55d9bc7bmr4839248qvx.31.1700039344067;
+        Wed, 15 Nov 2023 01:09:04 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1700039344; cv=none;
+        d=google.com; s=arc-20160816;
+        b=t3HMu0i8O39cegw+2MNw2mH8r7YSwtyIR9F0bfqyneO+t1cP/mDRWaGXFykkAjMnUj
+         Z6PoMZ/yOaH9T3GAGxxiTC25wSRV7ADeKB8at4ywaJtuaWbT7U4AymLxmdcoL8e2/Rdr
+         HH/0392kwI2iCWFuLDGqMQiFNeBWV8uTzi2APuzWJPzfz8s28ZugAPcSwOmbdclWq5Pe
+         /sJfjtOwXc4NxyUvBfc0VO33i2Rxe17Ek7FrvrIsRoA+uWdCe9jUP/CIit5Fi5t3z5Ax
+         TAWuLs5roEmhsPcpZLN1e+uhYsEg/kxxbU+8VBmqcIvNyoNfBZgaP/M6pN+lVoorKLO/
+         5OYg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:message-id:to:from:date:feedback-id:dkim-signature
+         :dkim-signature;
+        bh=nCORol5ohGgSOzIEkmLxEeSAsbm3P9GMpY2SJLhYfDY=;
+        fh=M7zpBSmSrQTIUr/YIOCCapxpRhuoBCOxUxc5jLVjqhI=;
+        b=wdGuJFd1snHTOTVXfgWzW1RF7NZr6f4fVOVce3Lwf4drt5hK3czEmFyAcU1Rj7bxkr
+         +DTJUUyPuyW8Wj4Mv6poteICRBW9kdhbIWsTLydVc3FyY28z9oW7RVxCttooibmoFOTL
+         wYWoSB3Elc0oxmSxH8Fe3BWDxPTL4DzWfBkk7yET4lu3R1IERX212Wo2+SbSBX1p0SQf
+         R8TnNK9Bg75yi7AMpjwnchBt0x23HJo8kikfXbA52/VOxcaLTDG1CwIFrKQr0KycBOKc
+         9UWbZIeWDVjyBGn6azkR0zD9i4CHsiRQ+/bcYMj6TUyTs+vvw5U6JSlQe824e/Craq78
+         Mhnw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@msg.gr8people.com header.s=dkim header.b=S0p3tfgK;
+       dkim=pass header.i=@email-od.com header.s=dkim header.b=VR7oaE4B;
+       spf=pass (google.com: domain of 7b74.82.c3b20004ab8e01.d31f84527709ca6839722cadb2af09cf@bounce.msg.gr8people.com designates 142.0.181.38 as permitted sender) smtp.mailfrom=7b74.82.c3b20004ab8e01.d31f84527709ca6839722cadb2af09cf@bounce.msg.gr8people.com;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=msg.gr8people.com
+Return-Path: <7b74.82.c3b20004ab8e01.d31f84527709ca6839722cadb2af09cf@bounce.msg.gr8people.com>
+Received: from s1-b526.socketlabs.email-od.com (s1-b526.socketlabs.email-od.com. [142.0.181.38])
+        by mx.google.com with ESMTPS id u14-20020a05620a0c4e00b00773b7d9a01esi3119982qki.72.2023.11.15.01.09.03
+        for <ul.echo12@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 15 Nov 2023 01:09:04 -0800 (PST)
+Received-SPF: pass (google.com: domain of 7b74.82.c3b20004ab8e01.d31f84527709ca6839722cadb2af09cf@bounce.msg.gr8people.com designates 142.0.181.38 as permitted sender) client-ip=142.0.181.38;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@msg.gr8people.com header.s=dkim header.b=S0p3tfgK;
+       dkim=pass header.i=@email-od.com header.s=dkim header.b=VR7oaE4B;
+       spf=pass (google.com: domain of 7b74.82.c3b20004ab8e01.d31f84527709ca6839722cadb2af09cf@bounce.msg.gr8people.com designates 142.0.181.38 as permitted sender) smtp.mailfrom=7b74.82.c3b20004ab8e01.d31f84527709ca6839722cadb2af09cf@bounce.msg.gr8people.com;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=msg.gr8people.com
+DKIM-Signature: v=1; a=rsa-sha256; d=msg.gr8people.com;s=dkim;
+	c=relaxed/relaxed; q=dns/txt; t=1700039344; x=1702631344;
+	h=x-mj-customid:content-type:subject:message-id:to:from:date:feedback-id:x-thread-info:subject:to:from:cc:reply-to;
+	bh=nCORol5ohGgSOzIEkmLxEeSAsbm3P9GMpY2SJLhYfDY=;
+	b=S0p3tfgKZPw+cTjLBEvhp2ocvvtoc3DYBeygcStKEbgWWvg+gRxJY+1KQsBNheAryvR19Hz7T8kTJLIs1L+43oQkY6eNr6FhLlEpQO5SfmIbQ/uZYd8ijl2Cl6qWLM03EHeKcJTNtIrROu0QvSfCizizIqQPY9oUH7XGfK2L7XE=
+DKIM-Signature: v=1; a=rsa-sha256; d=email-od.com;i=@email-od.com;s=dkim;
+	c=relaxed/relaxed; q=dns/txt; t=1700039344; x=1702631344;
+	h=x-mj-customid:content-type:subject:message-id:to:from:date:feedback-id:x-thread-info:subject:to:from:cc:reply-to;
+	bh=nCORol5ohGgSOzIEkmLxEeSAsbm3P9GMpY2SJLhYfDY=;
+	b=VR7oaE4BIeV5NLd70Mgvu5ISdZtZijLkQFD2xjSHO4trCkehRkOFV2C+mOYRVhmZTf+10ggZR9uGvR1uzxHdV3BLqzTaOJ7hzxxwsME5MoedFUZS4beohyxoY0mvfX60cSEhQx9elhYmSC/g2HhsvRJwQ1g7uxD69hci/CY1GRU=
+X-Thread-Info: N2I3NC4xZS5jM2IyMDAwNGFiOGUwMS42MTExNzYzLjE5OS51bC5lY2hvMTI9Z21haWwuY29t
+Feedback-ID: 31604:31604.199:socketlabs
+Received: from r1.us-east-1.aws.in.socketlabs.com (r1.us-east-1.aws.in.socketlabs.com [142.0.191.1]) by mxh4.email-od.com
+	with ESMTP(version=Tls12 cipher=Aes256 bits=256); Wed, 15 Nov 2023 04:09:01 -0500
+Received: from produs4trxmail01.gr8people.com (produs4trxmail01.gr8people.com [52.200.217.0]) by r1.us-east-1.aws.in.socketlabs.com
+	with ESMTP(version=Tls12 cipher=Aes256 bits=256); Wed, 15 Nov 2023 04:09:00 -0500
+Received: from [127.0.0.1] (localhost.localdomain [127.0.0.1])
+Date: Wed, 15 Nov 2023 09:09:00 +0000 (UTC)
+From: EACareers@msg.gr8people.com
+To: ul.echo12@gmail.com
+Message-ID: <857260398.276787.1700039340850@produs4trxmail01.gr8people.com>
+Subject: =?UTF-8?Q?Thank_you_for_your_interest_in=C2=A0181118_-=C2=A0Game_D?=
+ =?UTF-8?Q?esigner_in_Offsite_-_Germany_at_Electronic_Arts?=
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_276786_1143498746.1700039340850"
+X-GR8-CID: 199
+X-GR8-EID: 6111763
+X-MJ-CustomID: 199-6111763
+
+------=_Part_276786_1143498746.1700039340850
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi=C2=A0Miko=C5=82aj,
+
+Thank you for applying to 181118 - Game Designer, located in=C2=A0Offsite -=
+ Germany. We appreciate your interest in the role, but we will not be movin=
+g your application forward.
+
+This does not disqualify you from other openings at EA!=C2=A0 If you applie=
+d to other openings, your application is still active until you are notifie=
+d otherwise.
+
+We will however keep your resume on file for future opportunities. We encou=
+rage you to check our website often to apply for other EA positions.
+
+Best Regards,
+
+The EA Team
+NOTE: Please do not reply to this message. Replies are routed to a mailbox =
+that is not monitored.
+------=_Part_276786_1143498746.1700039340850
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<table width=3D"100%" style=3D"text-align: center;" align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td><table width=3D"650" sty=
+le=3D"width: 650px;table-layout: fixed;text-align: center;" align=3D"center=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td style=3D"width: =
+650px;" width=3D"650"><table width=3D"650" style=3D"table-layout: fixed;tex=
+t-align: left;" align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tr><td style=3D"width: 650px;" width=3D"650"><table width=3D"650" s=
+tyle=3D"width: 650px;table-layout: fixed;text-align: left;" align=3D"left" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td width=3D"650" styl=
+e=3D"width: 650px;text-align:left"><div style=3D"overflow: hidden; width: 6=
+50px;"><img src=3D"https://recruitcdn.com/publicimage/db2a90f3013634b69543a=
+15feb1af70ff139dea8/199/1"/></div></td></tr></table></td></tr></table></td>=
+</tr><tr><td style=3D"width: 650px;" width=3D"650"><table width=3D"650" sty=
+le=3D"table-layout: fixed;text-align: left;" align=3D"left" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0"><tr><td style=3D"width: 650px;" width=3D"=
+650"><table width=3D"650" style=3D"width: 650px;table-layout: fixed;text-al=
+ign: left;" align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tr><td width=3D"650" style=3D"width: 650px;text-align:left"><p>Hi&nbsp;Mi=
+ko=C5=82aj,<br /><br />Thank you for applying to 181118 - Game Designer, lo=
+cated in&nbsp;Offsite - Germany. We appreciate your interest in the role, b=
+ut we will not be moving your application forward.<br /><br />This does not=
+ disqualify you from other openings at EA!&nbsp; If you applied to other op=
+enings, your application is still active until you are notified otherwise.<=
+br /><br />We will however keep your resume on file for future opportunitie=
+s. We encourage you to check our website often to apply for other EA positi=
+ons.<br /><br />Best Regards,<br /><br />The EA Team</p>
+<p>NOTE: Please do not reply to this message. Replies are routed to a mailb=
+ox that is not monitored.</p></td></tr></table></td></tr></table></td></tr>=
+</table></td></tr></table><img src=3D"https://ea.gr8people.com/index.gp?met=
+hod=3Dcappservices.getBeaconImage&e=3D0559B96C70D10950B733D7CBFDC5B692&t=3D=
+1700039340838&w=3D3&h=3D1" width=3D"3" height=3D"1" />
+------=_Part_276786_1143498746.1700039340850--

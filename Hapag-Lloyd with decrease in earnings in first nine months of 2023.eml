@@ -1,0 +1,1230 @@
+Delivered-To: ul.echo12@gmail.com
+Received: by 2002:a2e:a37b:0:b0:2c5:4ef0:278b with SMTP id i27csp170746ljn;
+        Wed, 8 Nov 2023 22:33:18 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGuWa8ki1G5t64Ml2WRYNMN/zhTj0wYPTM293Pavw1plZPyr694ywJizbvu1JOrEAVAcw6G
+X-Received: by 2002:a05:600c:428c:b0:405:1c14:9227 with SMTP id v12-20020a05600c428c00b004051c149227mr3571764wmc.33.1699511598468;
+        Wed, 08 Nov 2023 22:33:18 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1699511598; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HKmJtHJ+W1dAgwLYr6+kJgpGO7EMWB0deZEsLPg9EWcAOuASFPfobcbrT6FJCo+RWl
+         uXqUjda2XW7AjIG69DuLX8KcvFNVWxRvPJ7eVZZwrzTVNUnFMLmMSjgh39j5cwEKu/S7
+         3sMRixqG7BvDuySZytowU3/XtcaSWALBmxC774tLNPQmrMf4yZ9kMzFVBONswkri81/U
+         CsuQXiO7+r/nNeM3msw/smhfKCOrl4ehxHvKIaxaHzxbsTsRwNwgHyPt4O48VIXziRhf
+         2pK1nsHU7DRHDzwDQJfASKlvjdvraQj4Ri8/9OVX1Ab4VX6uW+3c9EO1Rg8BHaoCM/44
+         bW1Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:from:lang:campaignuuid:subject:to:reply-to
+         :date:mime-version:dkim-signature:dkim-signature;
+        bh=TDLB67Y+XntQDt1p7jQEWhCK6NMNluIy6l8zgw66XOA=;
+        fh=M7zpBSmSrQTIUr/YIOCCapxpRhuoBCOxUxc5jLVjqhI=;
+        b=Q1XkBPDcxhYnRtfzlTRCVDSfqUrG71Ts1catDGf/ziyC37/Gs1rcS1Xyuo5a4WZcxt
+         5wzXEukM0sH9ydGjODDOIViquT5pIH7dTmPW6gjJKDtIf+zSSv++mNkpXSq7ff1CcttB
+         cNazrjTRhuKvD410jZ53kQvKZfewif1xOusTT5dSVW7w0sG4Y1/bXCvDGbbuNktvKwuc
+         J9MY/jxr2k4HPUEEtlkS9l+4lSpavmDutSqCSMEm0SFRgryIALDV4Z8+BS+XzQakzeEP
+         QcZuE20X9xIn4CDclagRLpbMEfJVfYLsv4l+8Dqb5nSxMJK3KGkbpEgDyxwkoV7tyitj
+         kB4Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hlag.com header.s=maileqs header.b=iHOGJOED;
+       dkim=pass header.i=@amazonses.com header.s=qftdzk2dqsatjnlrq4r5brjbihpfcrsh header.b="c/zPu7cu";
+       spf=pass (google.com: domain of 0107018bb2c8fbbb-fa5a58d0-e467-4eef-9dea-372f44313c61-000000@ses.hlag.com designates 69.169.224.58 as permitted sender) smtp.mailfrom=0107018bb2c8fbbb-fa5a58d0-e467-4eef-9dea-372f44313c61-000000@ses.hlag.com;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=hlag.com
+Return-Path: <0107018bb2c8fbbb-fa5a58d0-e467-4eef-9dea-372f44313c61-000000@ses.hlag.com>
+Received: from b224-58.smtp-out.eu-central-1.amazonses.com (b224-58.smtp-out.eu-central-1.amazonses.com. [69.169.224.58])
+        by mx.google.com with ESMTPS id t18-20020a1c7712000000b00408faa7ace1si637653wmi.158.2023.11.08.22.33.18
+        for <ul.echo12@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2023 22:33:18 -0800 (PST)
+Received-SPF: pass (google.com: domain of 0107018bb2c8fbbb-fa5a58d0-e467-4eef-9dea-372f44313c61-000000@ses.hlag.com designates 69.169.224.58 as permitted sender) client-ip=69.169.224.58;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hlag.com header.s=maileqs header.b=iHOGJOED;
+       dkim=pass header.i=@amazonses.com header.s=qftdzk2dqsatjnlrq4r5brjbihpfcrsh header.b="c/zPu7cu";
+       spf=pass (google.com: domain of 0107018bb2c8fbbb-fa5a58d0-e467-4eef-9dea-372f44313c61-000000@ses.hlag.com designates 69.169.224.58 as permitted sender) smtp.mailfrom=0107018bb2c8fbbb-fa5a58d0-e467-4eef-9dea-372f44313c61-000000@ses.hlag.com;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=hlag.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=maileqs;
+	d=hlag.com; t=1699511598;
+	h=Mime-Version:Date:Reply-To:To:Subject:From:Content-Type:Message-ID;
+	bh=U0LHceUTr2bqhceH7619ljRQIbd7HHStPXxXPNx7MUQ=;
+	b=iHOGJOEDqNUTziPRSVoTo/HFGW9LzQV7IAshJQBxmW57dHUwmdZhcbiNe3D6QPQP
+	uljJ+wnndXu2FcJVBK0c0LSTpKQNhy0JAFcLQUvfMhXQ5U8e+MX+jaSUEk+RrXsMHqE
+	DnqhYHjrnQImnusig404pXBNJ5Wpc4OGM+pqkdAISb8CO6mF5ujJD9IzEKS8J96HOmo
+	5kAB3l1GIs6Ng2cgJ4dUNh5t4BOJHf1iWG+Y1EK7ugUief74OgFyxxMKAU3tvVtQdV4
+	pvmPiJhZqVlu3wqlLd9cPE7+sXj8/Tqjw7ZKAdSWRjN4F0FnpM0RrIvcmzpYaXDz8ai
+	NVrhiq0Zjg==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=qftdzk2dqsatjnlrq4r5brjbihpfcrsh; d=amazonses.com; t=1699511598;
+	h=Mime-Version:Date:Reply-To:To:Subject:From:Content-Type:Message-ID:Feedback-ID;
+	bh=U0LHceUTr2bqhceH7619ljRQIbd7HHStPXxXPNx7MUQ=;
+	b=c/zPu7cuLEUoIeRS6kF0+uvCYcqnnFJdMAXGlvqu6D5cfFAAWC3IUaMINjSV5IBR
+	AzM7pVpM9UlxcGhCRP5C5LIL0Rf1odjK7U+MD0g4ENzg57yrMdpyOTv3Wpg5kUpIUxl
+	MgaW0yeZmGrA6xGsOm/7kNly/yg6ZjJBCLa0MPb8=
+Mime-Version: 1.0
+Date: Thu, 9 Nov 2023 06:33:18 +0000
+Reply-To: "ir@hlag.com" <ir@hlag.com>
+To: ul.echo12@gmail.com
+Subject: Hapag-Lloyd with decrease in earnings in first nine months of 2023
+CampaignUuid: 52581dfe-5945-4a66-819e-0d97be388a0e
+Lang: en
+From: Hapag-Lloyd Investor Relations <ir@hlag.com>
+Content-Type: multipart/alternative;
+ boundary=0453cdb6d92848b5507104917fdb82b65bc81e5403523e64e5d5bbf01eb9
+Message-ID: <0107018bb2c8fbbb-fa5a58d0-e467-4eef-9dea-372f44313c61-000000@eu-central-1.amazonses.com>
+Feedback-ID: 1.eu-central-1.dFPJ3ij05JKdi7nb9QDJFA7TI02Z+yE5+ORmNvcaLjg=:AmazonSES
+X-SES-Outgoing: 2023.11.09-69.169.224.58
+
+--0453cdb6d92848b5507104917fdb82b65bc81e5403523e64e5d5bbf01eb9
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+<!DOCTYPE html>
+
+
+=09
+=09
+=09
+
+
+
+
+
+
+
+=09
+	=09
+		=09
+	=09
+=09
+=09
+		&nbsp;
+=09
+
+
+
+
+
+=09
+
+
+
+
+
+
+
+
+
+
+
+Hapag-Lloyd AG
+
+
+ / Key word(s): 9 Month figures/Quarterly / Interim Statement
+
+
+
+
+
+Hapag-Lloyd with decrease in earnings in first nine months of 2023=20
+
+
+
+
+
+
+
+09.11.2023 / 07:31 CET/CEST
+
+
+
+The issuer is solely responsible for the content of this announcement.
+
+
+
+
+
+
+Hapag-Lloyd with decrease in earnings in first nine months of 2023
+
+
+ Freight rates declined further in the third quarter
+ Transport volume up in the third quarter, stable year-to-date
+ Terminal activities reported separately in new business segment
+ Earnings forecast for 2023 specified
+
+
+Hapag-Lloyd has concluded the first nine months of 2023 with a Group EBITDA=
+ of USD 4.5 billion (EUR 4.2 billion) and a Group EBIT of USD 3.0 billion (=
+EUR 2.8 billion). The Group profit stood at USD 3.4 billion (EUR 3.2 billio=
+n). These results are significantly below the prior-year level due to the s=
+evere change in market conditions. With the further expansion of its termin=
+al business, the Hapag-Lloyd Group=E2=80=99s business activities have also =
+been split for the first time into Liner Shipping and Terminal &amp; Infras=
+tructure segments.
+
+In the first nine months of 2023, the EBITDA in the Liner Shipping segment =
+decreased to USD 4.5 billion (EUR 4.1 billion). The EBIT fell to USD 3.0 bi=
+llion (EUR 2.7 billion). Revenues decreased to USD 15.2 billion (EUR 14.1 b=
+illion), primarily due to a lower average freight rate of 1,604 USD/TEU (9M=
+ 2022: 2,938 USD/TEU). This dropped even further in Q3 2023, to USD 1,312/T=
+EU (Q3 2022: USD 3,106/TEU), and it was much lower in several trades compar=
+ed to the same period of the prior year. In contrast, the transport volumes=
+ improved in the third quarter, rising by just under 5 percent, to 3,110 TT=
+EU (Q3 2022: 2,975 TTEU). As a result, the combined volumes of 8,916 TTEU i=
+n the first nine months of the year were almost on a par with those of the =
+prior-year period (9M 2022: 8,987 TTEU).
+
+Transport expenses experienced a year-on-year decrease of 11 percent, to US=
+D 9.6 billion (EUR 8.9 billion), owing in particular to the ongoing normali=
+sation of global supply chains as well as a lower average bunker consumptio=
+n price of USD 611 per tonne (9M 2022: 755 USD/t).
+
+In the Terminal &amp; Infrastructure segment, an EBITDA of USD 38 million (=
+EUR 35 million) and an EBIT of USD 29 million (EUR 27 million) were achieve=
+d in the first nine months of 2023. Since the new segment is still in the p=
+rocess of being formed, it does not reflect the results of a full nine-mont=
+h period. It comprises Hapag-Lloyd=E2=80=99s stakes in 20 terminals in Euro=
+pe, Latin America, the United States, India and North Africa as well as oth=
+er infrastructure participations.
+
+=E2=80=9CThanks to an increase in transport volumes in the third quarter, v=
+olumes are roughly flat for the nine-month period compared to 2022. At the =
+same time, we have continued to implement our strategic agenda, expanded ou=
+r terminal portfolio, and boosted customer satisfaction again through quali=
+ty improvements. However, freight rates are below the prior-year level and,=
+ as expected, fell again in the third quarter =E2=80=93 which is reflected =
+in much lower earnings. In response, we are working hard to reduce our expe=
+nses even more, such as by achieving savings on the procurement side and ma=
+king adjustments to our service network. Nevertheless, if spot rates do not=
+ recover, we could face some challenging quarters in this subdued market en=
+vironment,=E2=80=9D said Rolf Habben Jansen, CEO of Hapag-Lloyd AG.
+
+For the full year 2023, Hapag-Lloyd has made the forecast it published on 2=
+ March more specific. EBITDA is now expected to be in the range of USD 4.5 =
+to 5.5 billion (EUR 4.1 to 5 billion) and EBIT to be in the range of USD 2.=
+4 to 3.4 billion (EUR 2.2 to 3.1 billion). This forecast is subject to unce=
+rtainty given the many geopolitical conflicts, persistent inflationary pres=
+sures, and the continued high inventory levels of many customers.
+
+The financial report of the first nine month of 2023 is available online at=
+:
+
+https://www.hapag-lloyd.com/en/ir/publications/financial-report.html&nbsp;
+&nbsp;
+
+KEY FIGURES (USD)*
+&nbsp;
+
+
+=20
+ =20
+   &nbsp;
+   &nbsp;
+   Q3 2023
+   &nbsp;
+   Q3 2022
+   9M 2023
+   9M 2022
+   9M 2023 versus=20
+   9M 2022
+ =20
+ =20
+   Transport volume (TTEU)
+   3,110
+   2,975
+   8,916
+   8,987
+   -70
+ =20
+ =20
+   Freight rate (USD/TEU)
+   1,312
+   3,106
+   1,604
+   2,938
+   -1,334
+ =20
+ =20
+   Revenues (USD million)
+   4,465
+   9,878
+   15,312
+   28,439
+   -13,128
+ =20
+ =20
+   EBITDA (USD million)
+   744
+   5,708
+   4,519
+   16,649
+   -12,131
+ =20
+ =20
+   EBIT (USD million)
+   228
+   5,225
+   2,989
+   15,143
+   -12,154
+ =20
+ =20
+   EBITDA margin
+   17%
+   58%
+   30%
+   59%
+   -29 Ppt
+ =20
+ =20
+   EBIT margin
+   5%
+   53%
+   20%
+   53%
+   -34 Ppt
+ =20
+ =20
+   Group profit (USD million)
+   293
+   5,199
+   3,425
+   14,665
+   -11,239
+ =20
+=20
+
+
+&nbsp;
+
+KEY FIGURES (EURO)*
+
+&nbsp;
+
+
+=20
+ =20
+   &nbsp;
+   &nbsp;
+   Q3 2023
+   &nbsp;
+   Q3 2022
+   9M 2023
+   9M 2022
+   9M 2023 versus=20
+   9M 2022
+ =20
+ =20
+   Revenues (EUR million)
+   4,099
+   9,741
+   14,136
+   26,711
+   -12,576
+ =20
+ =20
+   EBITDA (EUR million)
+   679
+   5,634
+   4,172
+   15,638
+   -11,466
+ =20
+ =20
+   EBIT (EUR million)
+   204
+   5,155
+   2,760
+   14,223
+   -11,464
+ =20
+ =20
+   Group profit (EUR million)
+   264
+   5,120
+   3,162
+   13,774
+   -10,612
+ =20
+=20
+
+
+&nbsp;* In individual cases, rounding differences may occur in the tables f=
+or computational reasons.
+
+&nbsp;
+
+About Hapag-Lloyd
+With a fleet of 264 modern container ships and a total transport capacity o=
+f 2.0 million TEU, Hapag-Lloyd is one of the world=E2=80=99s leading liner =
+shipping companies. In the Liner Shipping segment, the Company has around 1=
+3,500 employees and 400 offices in 135 countries. Hapag-Lloyd has a contain=
+er capacity of 2.9 million TEU =E2=80=93 including one of the largest and m=
+ost modern fleets of reefer containers. A total of 113 liner services world=
+wide ensure fast and reliable connections between more than 600 ports acros=
+s the world. In the Terminal &amp; Infrastructure segment, Hapag-Lloyd has =
+stakes in 20 terminals in Europe, Latin America, the United States, India, =
+and North Africa. The roughly 2,600 employees assigned to the Terminal &amp=
+; Infrastructure segment handle terminal-related activities and provide com=
+plementary logistics services at selected locations.
+
+Disclaimer
+This press release contains forward-looking statements that involve a numbe=
+r of risks and uncertainties. Such statements are based on a number of assu=
+mptions, estimates, projections or plans that are inherently subject to sig=
+nificant risks, uncertainties and contingencies. Actual results can differ =
+materially from those anticipated in the Company=E2=80=99s forward-looking =
+statements.
+
+&nbsp;
+
+Contact:
+Alexander Drews
+Director Investor Relations
+Hapag-Lloyd AG
+Ballindamm 25
+20095 Hamburg
+Phone +49 40 3001-3705
+Fax +49 40 3001-72896
+Mobile +49 174 326-3123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09.11.2023 CET/CEST Dissemination of a Corporate News, transmitted by EQS N=
+ews - a service of EQS Group AG.The issuer is solely responsible for the co=
+ntent of this announcement.The EQS Distribution Services include Regulatory=
+ Announcements, Financial/Corporate News and Press Releases.Archive at www.=
+eqs-news.com
+
+
+
+
+
+
+
+
+
+
+
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+       =20
+       =20
+	=09
+	=09
+	=09
+	=09
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Language:
+	English
+
+
+
+
+	Company:
+	Hapag-Lloyd AG
+
+
+=09
+	Ballindamm 25
+
+
+=09
+	20095 Hamburg
+
+
+
+=09
+	Germany
+
+
+
+
+	Phone:
+	+49 (0) 40 3001 =E2=80=93 3705
+
+
+
+
+	Fax:
+	+49 (0) 40 3001 - 72896
+
+
+
+
+	E-mail:
+	ir@hlag.com
+
+
+
+
+	Internet:
+	www.hapag-lloyd.com
+
+
+
+
+	ISIN:
+	DE000HLAG475
+
+
+
+
+
+	WKN:
+	HLAG47
+
+
+
+
+
+
+
+
+
+
+
+	Listed:
+	Regulated Market in Frankfurt (Prime Standard), Hamburg; Regulated Unoffic=
+ial Market in Berlin, Dusseldorf, Hanover, Munich, Stuttgart, Tradegate Exc=
+hange
+
+
+
+
+
+
+
+
+
+	EQS News ID:
+	1768963
+
+
+
+
+
+
+
+=09
+
+
+
+
+
+
+
+
+	&nbsp;
+
+
+	End of News
+	EQS News Service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1768963&nbsp;&nbsp;09.11.2023&nbsp;CET/CEST
+
+
+
+
+
+
+Unsubscribe
+--0453cdb6d92848b5507104917fdb82b65bc81e5403523e64e5d5bbf01eb9
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+	<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1=
+.0, user-scalable=3Dyes">
+	<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<!-- keep uptpdate with content.css-->
+</head>
+<body>
+<style>
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+table.news_layout,
+table.news_footer_layout,
+table.news_layout_data_tabel {
+	margin:0px;
+	width:600px;
+	font-size: 1em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+table.news_layout_data_tabel {
+	border-collapse:collapse;
+
+}
+table.news_footer_layout td.first_column{
+	width:115px !important;
+}
+table.news_layout_data_tabel td {
+	padding:5px;
+}
+table.news_layout td {
+	/*text-align:left;*/
+	vertical-align:top;
+}
+table.news_layout hr{
+	height: 1px;
+	width:750px;
+	text-align:left;
+}
+table.news_layout a{
+	text-decoration: underline;
+}
+div.time_layout_email p {
+	font-size: 1em;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+}
+/* MEDIA QUERIES */
+@media all and (max-width: 641px){
+	body{
+		font-size: 14px;
+	}
+	table.news_layout,
+	table.news_footer_layout,
+	table.news_layout_data_table {
+		width: 100%!important;
+		padding: 0 !important;
+		font-size: .99em;
+	}
+	table.news_layout_data_table td {
+		font-size: .9em;
+	}
+	hr { width: 100%!important;  padding: 0 !important; }
+}
+
+</style>
+
+
+<table class=3D"news_layout" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0">
+	<tr>
+		<td>
+			<img src=3D"https://secure.equitystory.com/membersarea/companies/hapagll=
+/pics/logo.gif?r=3DTYXKKP" border=3D"0" alt=3D'logo'><br>
+		</td>
+	</tr>
+	<tr>
+		<td height=3D"30">&nbsp;</td>
+	</tr>
+</table>
+
+
+
+
+=09
+
+
+
+
+
+
+<table  class=3D"news_layout style2015"  border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" >
+<tr >
+<td >
+<p class=3D"news_top">
+
+Hapag-Lloyd AG
+
+
+ / Key word(s): 9 Month figures/Quarterly / Interim Statement
+
+
+<br/>
+
+
+Hapag-Lloyd with decrease in earnings in first nine months of 2023 <br/>
+
+
+
+
+
+
+
+<span class=3D"news_top_date">09.11.2023 / 07:31 CET/CEST</span><br/>
+
+
+
+The issuer is solely responsible for the content of this announcement.<br/>
+
+
+</p>
+
+
+
+<div class=3D"break-word news_main"><p><b>Hapag-Lloyd with decrease in earn=
+ings in first nine months of 2023</b></p>
+
+<ul type=3D"square">
+ <li>Freight rates declined further in the third quarter</li>
+ <li>Transport volume up in the third quarter, stable year-to-date</li>
+ <li>Terminal activities reported separately in new business segment</li>
+ <li>Earnings forecast for 2023 specified</li>
+</ul>
+
+<p>Hapag-Lloyd has concluded the first nine months of 2023 with a Group EBI=
+TDA of USD 4.5 billion (EUR 4.2 billion) and a Group EBIT of USD 3.0 billio=
+n (EUR 2.8 billion). The Group profit stood at USD 3.4 billion (EUR 3.2 bil=
+lion). These results are significantly below the prior-year level due to th=
+e severe change in market conditions. With the further expansion of its ter=
+minal business, the Hapag-Lloyd Group=E2=80=99s business activities have al=
+so been split for the first time into <b>Liner Shipping</b> and Terminal &a=
+mp; Infrastructure segments.</p>
+
+<p>In the first nine months of 2023, the EBITDA in the <b>Liner Shipping se=
+gment </b>decreased to USD 4.5 billion (EUR 4.1 billion). The EBIT fell to =
+USD 3.0 billion (EUR 2.7 billion). Revenues decreased to USD 15.2 billion (=
+EUR 14.1 billion), primarily due to a lower average freight rate of 1,604 U=
+SD/TEU (9M 2022: 2,938 USD/TEU). This dropped even further in Q3 2023, to U=
+SD 1,312/TEU (Q3 2022: USD 3,106/TEU), and it was much lower in several tra=
+des compared to the same period of the prior year. In contrast, the transpo=
+rt volumes improved in the third quarter, rising by just under 5 percent, t=
+o 3,110 TTEU (Q3 2022: 2,975 TTEU). As a result, the combined volumes of 8,=
+916 TTEU in the first nine months of the year were almost on a par with tho=
+se of the prior-year period (9M 2022: 8,987 TTEU).</p>
+
+<p>Transport expenses experienced a year-on-year decrease of 11 percent, to=
+ USD 9.6 billion (EUR 8.9 billion), owing in particular to the ongoing norm=
+alisation of global supply chains as well as a lower average bunker consump=
+tion price of USD 611 per tonne (9M 2022: 755 USD/t).</p>
+
+<p>In the <b>Terminal &amp; Infrastructure </b>segment, an EBITDA of USD 38=
+ million (EUR 35 million) and an EBIT of USD 29 million (EUR 27 million) we=
+re achieved in the first nine months of 2023. Since the new segment is stil=
+l in the process of being formed, it does not reflect the results of a full=
+ nine-month period. It comprises Hapag-Lloyd=E2=80=99s stakes in 20 termina=
+ls in Europe, Latin America, the United States, India and North Africa as w=
+ell as other infrastructure participations.</p>
+
+<p>=E2=80=9CThanks to an increase in transport volumes in the third quarter=
+, volumes are roughly flat for the nine-month period compared to 2022. At t=
+he same time, we have continued to implement our strategic agenda, expanded=
+ our terminal portfolio, and boosted customer satisfaction again through qu=
+ality improvements. However, freight rates are below the prior-year level a=
+nd, as expected, fell again in the third quarter =E2=80=93 which is reflect=
+ed in much lower earnings. In response, we are working hard to reduce our e=
+xpenses even more, such as by achieving savings on the procurement side and=
+ making adjustments to our service network. Nevertheless, if spot rates do =
+not recover, we could face some challenging quarters in this subdued market=
+ environment,=E2=80=9D said Rolf Habben Jansen, CEO of Hapag-Lloyd AG.</p>
+
+<p>For the full year 2023, Hapag-Lloyd has made the forecast it published o=
+n 2 March more specific. EBITDA is now expected to be in the range of USD 4=
+.5 to 5.5 billion (EUR 4.1 to 5 billion) and EBIT to be in the range of USD=
+ 2.4 to 3.4 billion (EUR 2.2 to 3.1 billion). This forecast is subject to u=
+ncertainty given the many geopolitical conflicts, persistent inflationary p=
+ressures, and the continued high inventory levels of many customers.</p>
+
+<p>The financial report of the first nine month of 2023 is available online=
+ at:</p>
+
+<p><a href=3D"https://www.hapag-lloyd.com/en/ir/publications/financial-repo=
+rt.html"><b>https://www.hapag-lloyd.com/en/ir/publications/financial-report=
+.html</b></a>&nbsp;<br />
+<b>&nbsp;</b></p>
+
+<p><b>KEY FIGURES (USD)*</b><br />
+<b>&nbsp;</b></p>
+
+<table class=3D'news_layout_data_tabel news_layout_data_table' cellspacing=
+=3D'0' cellpadding=3D'0' border=3D"0">
+ <tbody>
+  <tr>
+   <td valign=3D"center"><b>&nbsp;</b></td>
+   <td align=3D"center" valign=3D"top"><b>&nbsp;</b><br />
+   <b>Q3 2023</b></td>
+   <td align=3D"center" valign=3D"top"><b>&nbsp;</b><br />
+   <b>Q3 2022</b></td>
+   <td align=3D"center" valign=3D"center"><b>9M 2023</b></td>
+   <td align=3D"center" valign=3D"center"><b>9M 2022</b></td>
+   <td align=3D"center" valign=3D"center"><b>9M 2023 versus </b><br />
+   <b>9M 2022</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">Transport volume (TTEU)</td>
+   <td align=3D"center" valign=3D"center"><b>3,110</b></td>
+   <td align=3D"center" valign=3D"center">2,975</td>
+   <td align=3D"center" valign=3D"center"><b>8,916</b></td>
+   <td align=3D"center" valign=3D"center">8,987</td>
+   <td align=3D"center" valign=3D"center"><b>-70</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">Freight rate (USD/TEU)</td>
+   <td align=3D"center" valign=3D"center"><b>1,312</b></td>
+   <td align=3D"center" valign=3D"center">3,106</td>
+   <td align=3D"center" valign=3D"center"><b>1,604</b></td>
+   <td align=3D"center" valign=3D"center">2,938</td>
+   <td align=3D"center" valign=3D"center"><b>-1,334</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">Revenues (USD million)</td>
+   <td align=3D"center" valign=3D"center"><b>4,465</b></td>
+   <td align=3D"center" valign=3D"center">9,878</td>
+   <td align=3D"center" valign=3D"center"><b>15,312</b></td>
+   <td align=3D"center" valign=3D"center">28,439</td>
+   <td align=3D"center" valign=3D"center"><b>-13,128</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">EBITDA (USD million)</td>
+   <td align=3D"center" valign=3D"center"><b>744</b></td>
+   <td align=3D"center" valign=3D"center">5,708</td>
+   <td align=3D"center" valign=3D"center"><b>4,519</b></td>
+   <td align=3D"center" valign=3D"center">16,649</td>
+   <td align=3D"center" valign=3D"center"><b>-12,131</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">EBIT (USD million)</td>
+   <td align=3D"center" valign=3D"center"><b>228</b></td>
+   <td align=3D"center" valign=3D"center">5,225</td>
+   <td align=3D"center" valign=3D"center"><b>2,989</b></td>
+   <td align=3D"center" valign=3D"center">15,143</td>
+   <td align=3D"center" valign=3D"center"><b>-12,154</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">EBITDA margin</td>
+   <td align=3D"center" valign=3D"center"><b>17%</b></td>
+   <td align=3D"center" valign=3D"center">58%</td>
+   <td align=3D"center" valign=3D"center"><b>30%</b></td>
+   <td align=3D"center" valign=3D"center">59%</td>
+   <td align=3D"center" valign=3D"center"><b>-29 Ppt</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">EBIT margin</td>
+   <td align=3D"center" valign=3D"center"><b>5%</b></td>
+   <td align=3D"center" valign=3D"center">53%</td>
+   <td align=3D"center" valign=3D"center"><b>20%</b></td>
+   <td align=3D"center" valign=3D"center">53%</td>
+   <td align=3D"center" valign=3D"center"><b>-34 Ppt</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">Group profit (USD million)</td>
+   <td align=3D"center" valign=3D"center"><b>293</b></td>
+   <td align=3D"center" valign=3D"center">5,199</td>
+   <td align=3D"center" valign=3D"center"><b>3,425</b></td>
+   <td align=3D"center" valign=3D"center">14,665</td>
+   <td align=3D"center" valign=3D"center"><b>-11,239</b></td>
+  </tr>
+ </tbody>
+</table>
+
+<p><b>&nbsp;</b></p>
+
+<p><b>KEY FIGURES (EURO)*</b></p>
+
+<p><b>&nbsp;</b></p>
+
+<table class=3D'news_layout_data_tabel news_layout_data_table' cellspacing=
+=3D'0' cellpadding=3D'0' border=3D"0">
+ <tbody>
+  <tr>
+   <td valign=3D"center"><b>&nbsp;</b></td>
+   <td align=3D"center" valign=3D"top"><b>&nbsp;</b><br />
+   <b>Q3 2023</b></td>
+   <td align=3D"center" valign=3D"top"><b>&nbsp;</b><br />
+   <b>Q3 2022</b></td>
+   <td align=3D"center" valign=3D"center"><b>9M 2023</b></td>
+   <td align=3D"center" valign=3D"center"><b>9M 2022</b></td>
+   <td align=3D"center" valign=3D"center"><b>9M 2023 versus </b><br />
+   <b>9M 2022</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">Revenues (EUR million)</td>
+   <td align=3D"center" valign=3D"center"><b>4,099</b></td>
+   <td align=3D"center" valign=3D"center">9,741</td>
+   <td align=3D"center" valign=3D"center"><b>14,136</b></td>
+   <td align=3D"center" valign=3D"center">26,711</td>
+   <td align=3D"center" valign=3D"center"><b>-12,576</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">EBITDA (EUR million)</td>
+   <td align=3D"center" valign=3D"center"><b>679</b></td>
+   <td align=3D"center" valign=3D"center">5,634</td>
+   <td align=3D"center" valign=3D"center"><b>4,172</b></td>
+   <td align=3D"center" valign=3D"center">15,638</td>
+   <td align=3D"center" valign=3D"center"><b>-11,466</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">EBIT (EUR million)</td>
+   <td align=3D"center" valign=3D"center"><b>204</b></td>
+   <td align=3D"center" valign=3D"center">5,155</td>
+   <td align=3D"center" valign=3D"center"><b>2,760</b></td>
+   <td align=3D"center" valign=3D"center">14,223</td>
+   <td align=3D"center" valign=3D"center"><b>-11,464</b></td>
+  </tr>
+  <tr>
+   <td valign=3D"center">Group profit (EUR million)</td>
+   <td align=3D"center" valign=3D"center"><b>264</b></td>
+   <td align=3D"center" valign=3D"center">5,120</td>
+   <td align=3D"center" valign=3D"center"><b>3,162</b></td>
+   <td align=3D"center" valign=3D"center">13,774</td>
+   <td align=3D"center" valign=3D"center"><b>-10,612</b></td>
+  </tr>
+ </tbody>
+</table>
+
+<p><b>&nbsp;</b>* In individual cases, rounding differences may occur in th=
+e tables for computational reasons.</p>
+
+<p><b>&nbsp;</b></p>
+
+<p><b>About Hapag-Lloyd</b><br />
+With a fleet of 264 modern container ships and a total transport capacity o=
+f 2.0 million TEU, Hapag-Lloyd is one of the world=E2=80=99s leading liner =
+shipping companies. In the <b>Liner Shipping segment</b>, the Company has a=
+round 13,500 employees and 400 offices in 135 countries. Hapag-Lloyd has a =
+container capacity of 2.9 million TEU =E2=80=93 including one of the larges=
+t and most modern fleets of reefer containers. A total of 113 liner service=
+s worldwide ensure fast and reliable connections between more than 600 port=
+s across the world. In the <b>Terminal &amp; Infrastructure segment</b>, Ha=
+pag-Lloyd has stakes in 20 terminals in Europe, Latin America, the United S=
+tates, India, and North Africa. The roughly 2,600 employees assigned to the=
+ Terminal &amp; Infrastructure segment handle terminal-related activities a=
+nd provide complementary logistics services at selected locations.</p>
+
+<p><b>Disclaimer</b><br />
+This press release contains forward-looking statements that involve a numbe=
+r of risks and uncertainties. Such statements are based on a number of assu=
+mptions, estimates, projections or plans that are inherently subject to sig=
+nificant risks, uncertainties and contingencies. Actual results can differ =
+materially from those anticipated in the Company=E2=80=99s forward-looking =
+statements.</p>
+
+<p><b>&nbsp;</b></p>
+
+<p>Contact:<br />
+Alexander Drews<br />
+Director Investor Relations</p>
+Hapag-Lloyd AG<br />
+Ballindamm 25<br />
+20095 Hamburg<br />
+Phone +49 40 3001-3705<br />
+Fax +49 40 3001-72896<br />
+Mobile +49 174 326-3123</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/><hr/>
+<p class=3D"news_bottom">
+09.11.2023 CET/CEST Dissemination of a Corporate News, transmitted by EQS N=
+ews - a service of EQS Group AG.<br/>The issuer is solely responsible for t=
+he content of this announcement.<br/><br/>The EQS Distribution Services inc=
+lude Regulatory Announcements, Financial/Corporate News and Press Releases.=
+<br/>Archive at www.eqs-news.com<br/>
+</p>
+<hr/>
+
+</td >
+</tr >
+</table >
+
+
+
+
+
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+       =20
+       =20
+	=09
+	=09
+	=09
+	=09
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class=3D"news_footer_layout"  cellpadding=3D"0" cellspacing=3D"0" no=
+_format=3D1>
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"first_column column_1" no_break=
+=3D1 nowrap>Language:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">English</td>
+</tr>
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1 nowrap>C=
+ompany:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">Hapag-Lloyd AG</td>
+</tr>
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1"></td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">Ballindamm 25</td>
+</tr>
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1"></td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">20095 Hamburg</td>
+
+</tr>
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1"></td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">Germany</td>
+</tr>
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1 nowrap>P=
+hone:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">+49 (0) 40 3001 =E2=
+=80=93 3705</td>
+</tr>
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1 nowrap>F=
+ax:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">+49 (0) 40 3001 - 728=
+96</td>
+</tr>
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1 nowrap>E=
+-mail:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">ir@hlag.com</td>
+</tr>
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1 nowrap>I=
+nternet:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">www.hapag-lloyd.com</=
+td>
+</tr>
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1 nowrap>I=
+SIN:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">DE000HLAG475</td>
+</tr>
+
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1 nowrap>W=
+KN:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">HLAG47</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1>Listed:<=
+/td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">Regulated Market in F=
+rankfurt (Prime Standard), Hamburg; Regulated Unofficial Market in Berlin, =
+Dusseldorf, Hanover, Munich, Stuttgart, Tradegate Exchange</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1" no_break=3D1 nowrap>E=
+QS News ID:</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">1768963</td>
+</tr>
+
+</table>
+
+<br/>
+<table class=3D"news_footer_layout"  border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0"  no_format=3D1>
+<tr>
+	<td align=3D"left" valign=3D"top" colspan=3D"2"></td>
+</tr>
+</table>
+
+
+
+
+<table class=3D"news_layout news_layout_footer_end"  border=3D"0"   cellpad=
+ding=3D"0" cellspacing=3D"0" no_format=3D1>
+<tr>
+	<td align=3D"left" valign=3D"top" colspan=3D"2">&nbsp;</td>
+</tr>
+<tr>
+	<td align=3D"left" valign=3D"top" class=3D"column_1">End of News</td>
+	<td align=3D"left" valign=3D"top" class=3D"column_2">EQS News Service</td>
+</tr>
+</table>
+
+
+<table class=3D"news_layout" border=3D"0" width=3D"600" cellpadding=3D"0" c=
+ellspacing=3D"0" >
+<tr >
+<td >
+<hr/>
+</td >
+</tr >
+</table >
+
+
+<p class=3D"">
+
+1768963&nbsp;&nbsp;09.11.2023&nbsp;CET/CEST
+</p>
+
+
+
+
+</body>
+</html><div style=3D"box-sizing: border-box; text-align: center;"><a href=
+=3D"https://newcockpit.eqs.com/unsubscribe?code=3DeyJ0b2tlbiI6IjUwZDNhZGE2L=
+Tg0MTktNDUzZi05MzY5LWQ0MDYwODk1MTRiNiIsImNsaWVudCI6IjViZDJkMGI4LWVhN2MtMTFl=
+OC05MDJmLTJjNDRmZDg1NmQ4YyJ9" target=3D"_blank">Unsubscribe</a></div>
+--0453cdb6d92848b5507104917fdb82b65bc81e5403523e64e5d5bbf01eb9--

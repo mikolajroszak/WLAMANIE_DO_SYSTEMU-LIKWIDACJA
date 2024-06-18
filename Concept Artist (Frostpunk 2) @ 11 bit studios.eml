@@ -1,0 +1,217 @@
+Delivered-To: ul.echo12@gmail.com
+Received: by 2002:a2e:b0fc:0:b0:2c2:c38c:6369 with SMTP id h28csp430049ljl;
+        Wed, 11 Oct 2023 00:05:50 -0700 (PDT)
+X-Received: by 2002:a81:6057:0:b0:57a:f72:ebf8 with SMTP id u84-20020a816057000000b0057a0f72ebf8mr24255565ywb.28.1697007949889;
+        Wed, 11 Oct 2023 00:05:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1697007949; cv=none;
+        d=google.com; s=arc-20160816;
+        b=R22NxiMTFaDJDo7B7MM2dWVUWfJhgspVNtpsh1fjKz9gCa6htRCEKTIMNWMxAr0T6M
+         bVJBOB/vKoJZqxJ28BjUAa0Iz9Nno/rHCrpQeu/iCXa318tqPyj1ni1FArivHB5gH/OT
+         AE6vHQrT1LpG6KE31Qr1n43i+31fGMKymFd7kXjF1Vku3Moe69K9n1+poggw8ntPRI9q
+         lEOKR18RWnLl6sCoybhZHUh45phItBmDjhL2iduoWXq5dpKhA9mBJNS7SZa7/khgZx7o
+         IWxa+aPOGq2bFhnbflBKSLHgm66kUsKqzZ0bb6/kC+OgMtZM3UgwJk/vOF55I/eG//HF
+         ummA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:mime-version:from:dkim-signature;
+        bh=TpVyMlseHrn8URp4gugo5NoyY6/P6X+LjMoAcylPsnQ=;
+        fh=4Y2bA46qamFrf3GelJcLuCLyzLwe7vtFYTpbMA3nmAE=;
+        b=vzVybbIB3c7FEupYw+j77xkH1F0zB4d1hc0UQ70eG6MtsRCX6ntM1tiSrFOgqPivO/
+         6yEuOV8QiBa+euh/Jji9mecZukLpGkJzFHTP8d+/5mmaFsR8hhdLWtC38d8+oRwvMtiE
+         /8dKe119+E29QM5Sf6FBGp07SoXiKSqWyth/OrrIIjyxLXjYGfQQK7lg6qR0aTZBZhEI
+         9tK1urr4TBeygT2Z4GWJdbZklWnDPjRzkIf/So5JYXEHMUirsxNUNoX9np4HwfDlHWf5
+         +wmqWPgT0nKyAP2zQTMLYnGoHRP+DOipK90qfn8EEuJbMr/2Ox4VM3Mun9dvEgjIzIU/
+         AO7g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@11bitstudios.com header.s=google header.b=DPBRCHyI;
+       spf=pass (google.com: domain of kamil.nowakowski@11bitstudios.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kamil.nowakowski@11bitstudios.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=11bitstudios.com
+Return-Path: <kamil.nowakowski@11bitstudios.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id c79-20020a814e52000000b0058f3fa34af8sor6780161ywb.4.2023.10.11.00.05.49
+        for <ul.echo12@gmail.com>
+        (Google Transport Security);
+        Wed, 11 Oct 2023 00:05:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kamil.nowakowski@11bitstudios.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@11bitstudios.com header.s=google header.b=DPBRCHyI;
+       spf=pass (google.com: domain of kamil.nowakowski@11bitstudios.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kamil.nowakowski@11bitstudios.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=11bitstudios.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=11bitstudios.com; s=google; t=1697007949; x=1697612749; dara=google.com;
+        h=to:subject:message-id:date:mime-version:from:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=TpVyMlseHrn8URp4gugo5NoyY6/P6X+LjMoAcylPsnQ=;
+        b=DPBRCHyID5dS5lTVLt+6CvWT3IjjUjrij23WHa60ZOyWp6PwX6khxjE8yTKHPYYl4C
+         0hxO7QyrQKT/w5e91tbg4gBJHsBNItFmL3cwRuS85bM26SA4NTcEZBafQh4K7w3mOXMK
+         BJCLt9xt5t4yz6PGMdTIwxDC1+j9YaaKcPT+E=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1697007949; x=1697612749;
+        h=to:subject:message-id:date:mime-version:from:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=TpVyMlseHrn8URp4gugo5NoyY6/P6X+LjMoAcylPsnQ=;
+        b=U+aLjaEGpbH08IMP0oeQDO4kdECRjWLJm27HXUpCznwcdPW2HGXi+twCYrUgGYPTWX
+         v/1+M+X68RWqln6BNzggvbQ9Sn+K3i/tqgmE4AsRLoKHTM0UKE/2RjBbLOxZed/0zJqY
+         cP2jo0JO41+Z6xW55Sbxv7/vlIFuklywNvsvfYazGbGSgI7NVRQUsTe7tCCcuHJHixQ6
+         dkxF1rEP9UAeT9rImjfJwFf0wp7NJfYitgjuNlkLy+8VbCxCVBqq2lgrPlO2YkjammYD
+         nBASxjVN9r7/RYW/DL003P3LWHp9YueOPWTzYXA+GAcdTiJFs3NJ7nZDEkBFYx0iqOO/
+         +t6w==
+X-Gm-Message-State: AOJu0YwqitCpRtLlavm6hcnDVYAygtjVyRCUdtPLkpuOgqb3PEvSwHhX
+	sEjBtGyukOvrH/evNMGjNUHn5YJu+66xCOPW83rPC0wSpaGUcEUO
+X-Google-Smtp-Source: AGHT+IE89LifadcgqMph5uDm0G7t2LGOthXZwI/w5Wd4V+MqKLPrLifFIgbkqD9yCrmzxYm4SoweSEudnfKPSRC2cyg=
+X-Received: by 2002:a25:cf10:0:b0:d9a:4870:7943 with SMTP id
+ f16-20020a25cf10000000b00d9a48707943mr5769599ybg.28.1697007949322; Wed, 11
+ Oct 2023 00:05:49 -0700 (PDT)
+Received: from 260714527424 named unknown by gmailapi.google.com with
+ HTTPREST; Wed, 11 Oct 2023 02:05:48 -0500
+From: Kamil Nowakowski <kamil.nowakowski@11bitstudios.com>
+Mime-Version: 1.0
+Date: Wed, 11 Oct 2023 02:05:48 -0500
+Message-ID: <CABt3SNrUUC7XM-kRT0s2siMKHBiXW=8TesSyNw-c14QVV0f4wg@mail.gmail.com>
+Subject: Concept Artist (Frostpunk 2) @ 11 bit studios
+To: Mikolaj Roszak <ul.echo12@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000000332706076b740d"
+
+--00000000000000332706076b740d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Cze=C5=9B=C4=87 Mikolaj,
+
+Bardzo dzi=C4=99kuj=C4=99 za Twoje zg=C5=82oszenie i zainteresowanie do=C5=
+=82=C4=85czeniem do 11 bit
+studios. Niestety, nie zdecydowali=C5=9Bmy si=C4=99 na zaproszenie Ciebie d=
+o udzia=C5=82u
+w naszej rekrutacji. Powodem naszej decyzji jest to, =C5=BCe inni kandydaci
+posiadaj=C4=85 do=C5=9Bwiadczenie i umiej=C4=99tno=C5=9Bci bardziej odpowia=
+daj=C4=85ce naszym
+obecnym potrzebom.
+
+Wszystkiego dobrego!
+Kamil
+--=20
+
+
+[image: 11BIT Studios logo] <https://11bitstudios.com/>
+[image: website url] <https://11bitstudios.com/> [image: facebook url]
+<https://www.facebook.com/11bitstudiospl/> [image: twitter url]
+<https://twitter.com/11bitstudios> [image: linkedin url]
+<https://linkedin.com/company/11bitstudios>
+*  Kamil NOWAKOWSKI*
+   HR Specialist
+[image: email] <kamil.nowakowski@11bitstudios.com>
+kamil.nowakowski@11bitstudios.com
+[image: phone]  (+48) 729 055 981
+
+--
+Kapita=C5=82 zak=C5=82adowy / Share capital: PLN 238.014,40 (op=C5=82acony =
+w ca=C5=82o=C5=9Bci /
+fully paid-up) *| *S=C4=85d Rejonowy dlam.st.Warszawy, XIV Wydzia=C5=82 Gos=
+podarczy
+Krajowego Rejestru S=C4=85dowego
+KRS: 0000350888 * |*  NIP: 1182017282
+Ten email mo=C5=BCe zawiera=C4=87 informacje poufne. Je=C5=9Bli nie jeste=
+=C5=9B docelowym
+odbiorc=C4=85, usu=C5=84 je i niezw=C5=82ocznie powiadom o tym nadawc=C4=99=
+.
+This email may contain confidential information. If you are not the
+intended recipient, please delete it and notify the sender immediately.
+Klauzula informacyjna
+<https://11bitstudios.com/docs/klauzula_informacyjna.pdf>  *|*  Information
+Clause <https://11bitstudios.com/docs/information_clause.pdf>
+
+--00000000000000332706076b740d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div>Cze=C5=9B=C4=87 Mikolaj,</div>
+<div><br></div>
+<div>Bardzo dzi=C4=99kuj=C4=99 za Twoje zg=C5=82oszenie i zainteresowanie d=
+o=C5=82=C4=85czeniem do 11 bit studios. Niestety, nie zdecydowali=C5=9Bmy s=
+i=C4=99 na zaproszenie Ciebie do udzia=C5=82u w naszej rekrutacji. Powodem =
+naszej decyzji jest to, =C5=BCe inni kandydaci posiadaj=C4=85 do=C5=9Bwiadc=
+zenie i umiej=C4=99tno=C5=9Bci bardziej odpowiadaj=C4=85ce naszym obecnym p=
+otrzebom.<br></div>
+<div><br></div>
+<div>Wszystkiego dobrego!</div>
+<div>Kamil</div><table><tbody><tr><td>--
+<p><br></p>
+<table><tbody><tr><td><table><tbody><tr><td><table><tbody><tr><td><table><t=
+body><tr><td><p style=3D"max-width:182px"><a href=3D"https://11bitstudios.c=
+om/" target=3D"_blank" rel=3D"noopener"><img width=3D"182" src=3D"https://1=
+1bitstudios.com/11bitfiles/footer/11bit_logo.png" alt=3D"11BIT Studios logo=
+" height=3D"141" style=3D"width: 182px; max-width: 182px; height: 141px;"><=
+/a></p></td></tr></tbody></table></td></tr><tr><td><table><tbody><tr><td><a=
+ href=3D"https://11bitstudios.com/" target=3D"_blank" rel=3D"noopener"><img=
+ width=3D"20" height=3D"20" src=3D"https://11bitstudios.com/11bitfiles/foot=
+er/www.png" alt=3D"website url"></a></td><td><a href=3D"https://www.faceboo=
+k.com/11bitstudiospl/" target=3D"_blank" rel=3D"noopener"><img width=3D"20"=
+ height=3D"20" src=3D"https://11bitstudios.com/11bitfiles/footer/fb.png" al=
+t=3D"facebook url"></a></td><td><a href=3D"https://twitter.com/11bitstudios=
+" target=3D"_blank" rel=3D"noopener"><img width=3D"20" height=3D"20" src=3D=
+"https://11bitstudios.com/11bitfiles/footer/tt.png" alt=3D"twitter url"></a=
+></td><td><a href=3D"https://linkedin.com/company/11bitstudios" target=3D"_=
+blank" rel=3D"noopener"><img width=3D"20" height=3D"20" src=3D"https://11bi=
+tstudios.com/11bitfiles/footer/lIn.png" alt=3D"linkedin url"></a></td></tr>=
+</tbody></table></td></tr></tbody></table></td><td><table><tbody><tr><td><t=
+able><tbody><tr><td><img width=3D"10" height=3D"40" src=3D"https://11bitstu=
+dios.com/11bitfiles/footer/exlam.png"></td><td><table><tbody><tr><td><stron=
+g><span style=3D"font-size:12px"><span style=3D"font-size:14px"><span style=
+=3D"font-size:18px;color:rgb(12,12,12)">=C2=A0 Kamil NOWAKOWSKI</span></spa=
+n></span></strong></td></tr><tr><td><span style=3D"font-size:12px"><span st=
+yle=3D"font-size:12px">=C2=A0 =C2=A0<span style=3D"color:rgb(38,38,38)">HR =
+Specialist</span></span></span></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr><tr><td><table><tbody><tr><td><table><tbody><tr><td><a hr=
+ef=3D"mailto:kamil.nowakowski@11bitstudios.com" target=3D"_blank" rel=3D"no=
+opener"><img src=3D"https://11bitstudios.com/11bitfiles/footer/email-icon.p=
+ng" alt=3D"email"></a></td><td>=C2=A0<a href=3D"mailto:kamil.nowakowski@11b=
+itstudios.com" target=3D"_blank" rel=3D"noopener"><span style=3D"font-size:=
+11px"><span style=3D"color:rgb(38,38,38)">kamil.nowakowski@11bitstudios.com=
+</span></span></a></td></tr><tr><td><a target=3D"_blank" rel=3D"noopener"><=
+img src=3D"https://11bitstudios.com/11bitfiles/footer/photo-icon.png" alt=
+=3D"phone"></a></td><td><span style=3D"font-size:11px">=C2=A0<a target=3D"_=
+blank" rel=3D"noopener"><span style=3D"color:rgb(38,38,38)">(+48) 729 055 9=
+81</span></a></span></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td><span st=
+yle=3D"color:rgb(89,89,89)"><br>--</span><table><tbody><tr><td><table><tbod=
+y><tr><td><span style=3D"font-size:11px"><span style=3D"font-size:10px"><sp=
+an style=3D"color:rgb(63,63,63)"><span style=3D"color:rgb(89,89,89)">Kapita=
+=C5=82 zak=C5=82adowy / Share capital: PLN 238.014,40 (op=C5=82acony w ca=
+=C5=82o=C5=9Bci / fully paid-up)</span></span></span></span></td><td><span =
+style=3D"font-size:11px"><span style=3D"font-size:10px"><strong><span style=
+=3D"color:rgb(192,80,77)">| </span></strong><span style=3D"color:rgb(63,63,=
+63)"><span style=3D"color:rgb(89,89,89)">S=C4=85d Rejonowy dlam.st.Warszawy=
+, XIV Wydzia=C5=82 Gospodarczy Krajowego Rejestru S=C4=85dowego</span></spa=
+n></span></span></td></tr></tbody></table></td></tr><tr><td><table><tbody><=
+tr><td><span style=3D"font-size:11px;color:rgb(63,63,63)"><span style=3D"fo=
+nt-size:10px;color:rgb(63,63,63)"><span style=3D"color:rgb(89,89,89)">KRS: =
+0000350888</span></span></span></td><td><span style=3D"font-size:11px"><spa=
+n style=3D"font-size:10px"><strong><span style=3D"color:rgb(99,36,35)">=C2=
+=A0<span style=3D"color:rgb(192,80,77)">|</span></span></strong><span style=
+=3D"color:rgb(192,80,77)">=C2=A0</span> <span style=3D"color:rgb(63,63,63)"=
+><span style=3D"color:rgb(89,89,89)">NIP: 1182017282</span></span></span></=
+span></td></tr></tbody></table></td></tr><tr><td><span style=3D"font-size:1=
+1px"><span style=3D"font-size:10px"><span style=3D"color:rgb(63,63,63)"><sp=
+an style=3D"color:rgb(89,89,89)">Ten email mo=C5=BCe zawiera=C4=87 informac=
+je poufne. Je=C5=9Bli nie jeste=C5=9B docelowym odbiorc=C4=85, usu=C5=84 je=
+ i niezw=C5=82ocznie powiadom o tym nadawc=C4=99.</span></span></span></spa=
+n></td></tr><tr><td><span style=3D"font-size:11px"><span style=3D"font-size=
+:10px"><span style=3D"color:rgb(63,63,63)"><span style=3D"color:rgb(89,89,8=
+9)">This email may contain confidential information. If you are not the int=
+ended recipient, please delete it and notify the sender immediately.</span>=
+</span></span></span></td></tr><tr><td><table><tbody><tr><td><a href=3D"htt=
+ps://11bitstudios.com/docs/klauzula_informacyjna.pdf" target=3D"_blank" rel=
+=3D"noopener"><span style=3D"font-size:11px"><span style=3D"font-size:10px"=
+><span style=3D"color:rgb(63,63,63)"><span style=3D"color:rgb(89,89,89)">Kl=
+auzula informacyjna</span></span></span></span></a></td><td><span style=3D"=
+font-size:11px"><span style=3D"font-size:10px"><span style=3D"color:rgb(63,=
+63,63)"><span style=3D"color:rgb(89,89,89)">=C2=A0</span></span><span style=
+=3D"color:rgb(63,63,63)"><strong><span style=3D"color:rgb(99,36,35)"><span =
+style=3D"color:rgb(192,80,77)">|</span></span></strong></span><span style=
+=3D"color:rgb(63,63,63)">=C2=A0=C2=A0</span><a href=3D"https://11bitstudios=
+.com/docs/information_clause.pdf" target=3D"_blank" rel=3D"noopener"><span =
+style=3D"color:rgb(89,89,89)">I</span><span style=3D"color:rgb(89,89,89)">n=
+formation Clause</span></a></span></span></td></tr></tbody></table></td></t=
+r></tbody></table></td></tr><tr><td><br></td></tr></tbody></table></td></tr=
+></tbody></table>
+
+--00000000000000332706076b740d--

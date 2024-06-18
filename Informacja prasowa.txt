@@ -1,0 +1,36 @@
+arkk-copenhagen.myshopify.com | Szczegóły - Optimize
+https://optimize.google.com/optimize/home/#/accounts/4703997302/containers/14292351/experiments/6
+
+Po 30 września 2023 r. usługa Google Optimize nie będzie już dostępna. Do tego czasu można nadal przeprowadzać eksperymenty. 
+Dokładamy wszelkich starań, aby umożliwiać firmom każdej wielkości zwiększanie komfortu użytkowników. 
+Inwestujemy też w testy A/B w Google Analytics 4.
+
+Google Analytics
+Optimize korzysta z Google Analytics do przeprowadzania pomiarów.
+Usługa: Krabowe Skorupki
+Widok: Mikołaj Roszak Shopify
+Identyfikator doświadczenia: QENjG5k7RJa7oP3ZeIdNHw
+
+Zakończony
+Rozpoczęty ręcznie: wt., 8 gru 2020, 15:21 CET
+Zakończone: czw., 12 paź 2023, 22:25 CEST
+
+Zakończono personalizację Google Optimize: arkk-copenhagen.myshopify.com (OPT-TDBJ3CJ)
+Twoja personalizacja została zakończona
+Witamy,
+Zakończono personalizację arkk-copenhagen.myshopify.com w kontenerze OPT-TDBJ3CJ. Użytkownicy nie widzą już wprowadzonych przez Ciebie zmian.
+Wyświetl personalizację
+Dowiedz się więcej o interpretowaniu raportów Optymalizacji.
+Powodzenia,
+Zespół Google Optimize
+
+Google Marketing Platform - Unified Advertising and Analytics https://marketingplatform.google.com/home
+Google Analytics https://360suite.google.com
+
+Wczoraj zakończyłem rozpoczętą 8 grudnia 2020 roku na Google Marketing Platform personalizację globalnego modułu 
+commerce firmy @Shopify (usługa: Krabowe Skorupki, widok: Mikołaj Roszak Shopify i dalej) przy użyciu technolgii Google Optimize która 
+od 30 września 2023 nie będzie już dostępna. Wprowadziłem zmiany  w witrynach i kierowaniu na stony. 
+Od dziś host równa się..., system operacyjny równa się...
+Niestety, nasi użytkownicy na razie nie zobaczą wprowadzonych przeze mnie zmian. 
+Testujemy A/B w Google Analytics 4, Optimize korzysta z Google Analytics do przeprowadzania pomiarów.
+
