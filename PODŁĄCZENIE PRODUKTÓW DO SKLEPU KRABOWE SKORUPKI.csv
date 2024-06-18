@@ -1,0 +1,4 @@
+﻿type, mode, number, currency, issuingPerson, offerDate, offerStatus, paymentDate, paymentType, customer, entries.product, entries.quantity, entries.unitNettoPrice, entries.vatPercent, entries.unit
+OFFER, "SALE", "17/10/2012/O", "PLN", "Jacob Smith", "2012-10-11", "NEW", "2012-11-02", "CASH", 1, 1, 1, "380.20", 22, "szt."
+ORDER, "SALE", "17/10/2012/Z", "PLN", "Jacob Smith", "2012-10-12", "ACCEPTED", "2012-11-02", "CASH", , 1, 1, "380.20", 22, "szt."
+ORDER, "SALE", "18/10/2012/Z", "PLN", "Jacob Smith", "2012-10-13", "REJECTED", "2012-11-13", "CASH", 2, 1, 1, "380.20", 22,

@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION;TYPE=WORK:3.0
+FN;CHARSET=UTF-8:Orest Melnyk
+N;CHARSET=UTF-8:Orest Melnyk;;;;
+PROFILE:VCARD
+ADR;CHARSET=UTF-8:;;318 Woodlawn Avenue;Royal Oak;MI;48073;USA
+EMAIL:omacomp@gmail.com
+ORG;CHARSET=UTF-8:OMA Comp
+URL:http://www.omacomp.com
+END:VCARD
